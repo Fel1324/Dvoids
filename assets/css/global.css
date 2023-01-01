@@ -1,0 +1,68 @@
+@import url('header.css');
+@import url('menu.css');
+@import url('banner.css');
+@import url('main.css');
+@import url('footer.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* cores de background */
+    --primary-background-color: rgb(255, 255, 255);
+    --secondary-background-color: rgb(0, 0, 0);
+    --tertiary-background-color: rgb(235, 235, 235);
+    --email-background-color: rgb(140, 140, 140);
+
+    /* cores de textos */
+    --main-text-color: rgb(0, 0, 0);
+    --banner-text-color: rgb(255, 255, 255);
+    --price-text-color: rgb(62, 118, 111);
+    --footer-title-color: rgb(255, 255, 255);
+    --email-text-color: rgb(255, 255, 255);
+    --footer-text-color: rgb(104, 105, 106);
+
+    /* cores de bordas */
+    --email-border-color: rgb(238, 238, 238);
+
+    /* tipografia */
+    --font: 'Roboto', sans-serif;
+
+    /* 1REM = 10px */
+    font-size: 62.5%;
+}
+
+html, body{
+    background-color: var(--primary-background-color);
+    color: var(--main-text-color);
+
+    width: 100%;
+    height: 100%;
+
+    font-family: var(--font);
+    font-size: 1.6rem;
+
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    background: transparent;
+
+    cursor: pointer;
+}
+
+.section__title{
+    text-align: center;
+    font-size: 3.8rem;
+    text-transform: uppercase;
+
+    margin-bottom: 4rem;
+}

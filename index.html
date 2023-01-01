@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Página Inicial | Dvoids</title>
+        <link rel="stylesheet" href="assets/css/global.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header id="inicio" class="header">
+            <!-- PARTE MOBILE -->
+            <div class="header__container--mobile">
+                <div class="header__content--mobile">
+                    <a class="header__logo--mobile" href="#!"><img src="assets/img/logo.png" alt="Logo Dvoids"></a>
+                    <button onclick="openMenu()" class="header__button--open" aria-label="Abrir menu lateral"><img src="assets/img/menu-open.png" alt></button>
+                </div>
+            </div>
+
+            <!-- PATE DESKTOP -->
+            <div class="header__container--desktop">
+                <div class="header__content--desktop">
+                    <a class="header__logo--desktop" href="#!"><img src="assets/img/logo.png" alt="Logo Dvoids"></a>
+
+                    <nav class="header__navigation">
+                        <ul class="header__lista">
+                            <li class="header__item"><a href="#!" class="header__link">Início</a></li>
+                            <li class="header__item"><a href="#branco" class="header__link">Brancos</a></li>
+                            <li class="header__item"><a href="#preto" class="header__link">Pretos</a></li>
+                            <li class="header__item"><a href="#novidades" class="header__link">Novidades</a></li>
+                            <li class="header__item"><a href="#roupas" class="header__link">Roupas</a></li>
+                            <li class="header__item"><a href="#!" class="header__link" target="_blank"><img src="assets/img/carrinho.png" alt="Abrir seu carrinho"></a></li>
+                            <li class="header__item"><a href="#!" class="header__link" target="_blank"><img src="assets/img/login.png" alt="Abrir página para fazer login"></a></li>
+                            <li class="header__item"><a href="#!" class="header__link" target="_blank"><img src="assets/img/email-header.png" alt="Abrir email da loja"></a></li>
+                            <li class="header__item"><a href="#!" class="header__link" target="_blank"><img src="assets/img/telefone.png" alt="Abrir telefone da loja"></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <aside class="menu">
+            <div class="menu__header">
+                <a class="menu__logo" href="#!"><img src="assets/img/logo.png" alt="Logo Dvoids"></a>
+                <button onclick="closeMenu()" class="menu__button--close" aria-label="Fechar menu lateral"><img src="assets/img/menu-close.png" alt></button>
+            </div>
+
+            <ul class="menu__lista">
+                <li class="menu__item"><a href="#!" class="menu__link">Início</a></li>
+                <li class="menu__item"><a href="#branco" class="menu__link">Brancos</a></li>
+                <li class="menu__item"><a href="#preto" class="menu__link">Pretos</a></li>
+                <li class="menu__item"><a href="#novidades" class="menu__link">Novidades</a></li>
+                <li class="menu__item"><a href="#roupas" class="menu__link">Roupas</a></li>
+                <li class="menu__item"><a href="#!" class="menu__link" target="_blank"><img src="assets/img/carrinho.png" alt="Abrir seu carrinho"></a></li>
+                <li class="menu__item"><a href="#!" class="menu__link" target="_blank"><img src="assets/img/login.png" alt="Abrir página para fazer login"></a></li>
+                <li class="menu__item"><a href="#!" class="menu__link" target="_blank"><img src="assets/img/email-header.png" alt="Abrir email da loja"></a></li>
+                <li class="menu__item"><a href="#!" class="menu__link" target="_blank"><img src="assets/img/telefone.png" alt="Abrir telefone da loja"></a></li>
+            </ul>
+        </aside>
+
+        <section class="banner">
+            <img class="banner__img--logo" src="assets/img/logo-banner.png" alt>
+            <h1 class="banner__title">Os melhores instrumentos para você criar sua música</h1>
+            <img class="banner__img--instrumento" src="assets/img/instrumento-banner.png" alt>
+        </section>
+
+        <main class="main">
+            <section class="main__populares">
+                <h2 class="section__title">Populares</h2>
+                
+                <div class="main__container">
+                    <div class="main__content-populares">
+                        <a id="branco" class="main__link-populares" href="#!">
+                            <img class="main__img-populares" src="assets/img/popular-brancos.png" alt="Ir para os instrumentos musicais populares de cor branca. 3 Unidades">
+                        </a>
+    
+                        <a id="preto" class="main__link-populares" href="#!">
+                            <img class="main__img-populares" src="assets/img/popular-pretos.png" alt="Ir para os instrumentos musicais populares de cor preta. 3 Unidades">
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="novidades" class="main__novidades">
+                <h2 class="section__title">Novidades</h2>
+
+                <div class="main__container">
+                    <div class="main__content-novidades">
+                        <a class="main__produto-novidades instrumento1" href="#!">
+                            <img class="main__img-novidades" src="assets/img/instrumento1.png" alt="instrumento musical elegante de cor cinza escuro com detalhes cinza claro. possui um fundo branco">
+    
+                            <div class="main__infoProduto-novidades">
+                                <h3 class="main__nomeProduto-novidades">Black</h3>
+                                <h4 class="main__precoProduto-novidades">R$ 220,00</h4>
+                            </div>
+                        </a>
+    
+                        <a class="main__produto-novidades instrumento2" href="#!">
+                            <img class="main__img-novidades" src="assets/img/instrumento2.png" alt="instrumento musical elegante de cor totalmente preta. possui um fundo cinza claro">
+    
+                            <div class="main__infoProduto-novidades">
+                                <h3 class="main__nomeProduto-novidades">Black 2</h3>
+                                <h4 class="main__precoProduto-novidades">R$ 189,99</h4>
+                            </div>
+                        </a>
+    
+                        <a class="main__produto-novidades instrumento3" href="#!">
+                            <img class="main__img-novidades" src="assets/img/instrumento3.png" alt="instrumento musical elegante de cor preta com detalhes cinza. possui um fundo cinza claro">
+    
+                            <div class="main__infoProduto-novidades">
+                                <h3 class="main__nomeProduto-novidades">Black 3</h3>
+                                <h4 class="main__precoProduto-novidades">R$ 139,00</h4>
+                            </div>
+                        </a>
+    
+                        <a class="main__produto-novidades instrumento4" href="#!">
+                            <img class="main__img-novidades" src="assets/img/instrumento4.png" alt="instrumento musical elegante de cor branca com detalhes laranja claro (cor salmão). possui um fundo cinza claro">
+    
+                            <div class="main__infoProduto-novidades">
+                                <h3 class="main__nomeProduto-novidades">White</h3>
+                                <h4 class="main__precoProduto-novidades">R$ 159,90</h4>
+                            </div>
+                        </a>
+    
+                        <a class="main__produto-novidades instrumento5" href="#!">
+                            <img class="main__img-novidades" src="assets/img/instrumento5.png" alt="instrumento musical elegante de cor branca com detalhes cinza claro. possui um fundo branco">
+    
+                            <div class="main__infoProduto-novidades">
+                                <h3 class="main__nomeProduto-novidades">White 2</h3>
+                                <h4 class="main__precoProduto-novidades">R$ 160,00</h4>
+                            </div>
+                        </a>
+    
+                        <a class="main__produto-novidades instrumento6" href="#!">
+                            <img class="main__img-novidades" src="assets/img/instrumento6.png" alt="instrumento musical elegante de cor totalmente branca. possui um fundo cinza claro">
+    
+                            <div class="main__infoProduto-novidades">
+                                <h3 class="main__nomeProduto-novidades">Sail White</h3>
+                                <h4 class="main__precoProduto-novidades">R$ 130,00</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="roupas" class="main__roupas">
+                <h2 class="section__title">Roupas</h2>
+                
+                <div class="main__container">
+                    <div class="main__content-roupas">
+                        <div class="main__paragrafoDivisao-roupas">
+                            <p class="main__paragrafo-roupas camiseta-mobile">Além de instrumentos, também temos roupas, como você pode ver abaixo.</p>
+                            <p class="main__paragrafo-roupas camiseta-desktop">Além de instrumentos, também temos roupas, como você pode ver ao lado.</p>
+                        </div>
+
+                        <div class="main__imgDivisao-roupas">
+                            <img class="main__img-roupas" src="assets/img/camiseta-Dvoids.png" alt="homem vestindo a camiseta Dvoids, a roupa possui a logo da empresa no peito direito. O homem está com as mãos no bolso e do pescoço para cima não é possível ver, pois não aparece na imagem.">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__content">
+                <div class="footer__divisao">
+                    <h3 class="footer__title">Sobre</h3>
+
+                    <a class="footer__link" href="#!" target="_blank">Apresentar</a>
+                    <a class="footer__link" href="#!" target="_blank">Nos Contactar</a>
+                </div>
+
+                <div class="footer__divisao">
+                    <h3 class="footer__title">Ajuda & Suporte</h3>
+
+                    <a class="footer__link" href="#!" target="_blank">Centro de Ajuda</a>
+                    <a class="footer__link" href="#!" target="_blank">Envio & Delivery</a>
+                    <a class="footer__link" href="#!" target="_blank">Política de Retorno</a>
+                </div>
+
+                <div class="footer__divisao">
+                    <h3 class="footer__title">Negócios</h3>
+
+                    <a class="footer__link" href="#!" target="_blank">Tornar-se um negociador</a>
+
+                    <h3 class="footer__title">Compras</h3>
+
+                    <a class="footer__link" href="#!" target="_blank">Procurar a loja</a>
+                    <a class="footer__link" href="#!" target="_blank">Loja Amazônica</a>
+               </div>
+
+                <div class="footer__divisao">
+                    <h3 class="footer__title">Nos seguir</h3>
+
+                    <div class="footer__social-links">
+                        <a class="footer__redes-sociais" href="#!" target="_blank"><img src="assets/img/face.png" alt="Facebook Dvoids"></a>
+                        <a class="footer__redes-sociais" href="#!" target="_blank"><img src="assets/img/insta.png" alt="Instagram Dvoids"></a>
+                        <a class="footer__redes-sociais" href="#!" target="_blank"><img src="assets/img/tiktok.png" alt="TikTok Dvoids"></a>
+                        <a class="footer__redes-sociais" href="#!" target="_blank"><img src="assets/img/youtube.png" alt="YouTube Dvoids"></a>
+                    </div>
+
+                    <h3 class="footer__title">Inscreva-se</h3>
+                    <p class="footer__paragraph">Receba as últimas notícias da loja Dvoids</p>
+
+                    <form class="footer__email">
+                        <input class="footer__email-input" type="email" placeholder="E-mail" required>
+                        <button class="footer__button-form" aria-label="Confirmar Email"><img src="assets/img/email-footer.png" alt></button>
+                    </form>
+                </div>
+            </div>
+        </footer>
+
+        <script src="assets/js/menu-lateral.js"></script>
+    </body>
+</html>

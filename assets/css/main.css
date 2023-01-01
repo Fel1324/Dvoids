@@ -1,0 +1,245 @@
+.main{
+  width: 100%;
+}
+
+.main__container{
+  width: min(33rem, 90%);
+
+  margin-inline: auto;
+}
+
+/* POPULARES */
+.main__populares{
+  padding-block: 7rem;
+}
+
+.main__content-populares{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+.main__img-populares{
+  vertical-align: top;
+
+  width: 100%;
+  height: 35.1rem;
+
+  transition: all 250ms;
+}
+
+.main__img-populares:hover{
+  transform: scale(1.1);
+
+  transition: all 250ms;
+
+  border-radius: 2rem;
+}
+
+/* NOVIDADES */
+.main__novidades{
+  padding-top: 7rem;
+  padding-bottom: 22rem;
+}
+
+.main__content-novidades{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  row-gap: 20rem;
+}
+
+.main__img-novidades{
+  vertical-align: top;
+  
+  width: 100%;
+  height: 100%;
+}
+
+.main__infoProduto-novidades{
+  background-color: var(--tertiary-background-color);
+
+  padding: 2rem;
+}
+
+.main__nomeProduto-novidades{
+  color: var(--main-text-color);
+
+  font-size: 2rem;
+
+  margin-bottom: 2rem;
+
+  transition: all 200ms;
+}
+
+.main__nomeProduto-novidades:hover{
+  font-weight: 400;
+
+  transition: all 200ms;
+}
+
+.main__precoProduto-novidades{
+  color: var(--price-text-color);
+
+  font-size: 2.2rem;
+}
+
+/* ROUPAS */
+.main__roupas{
+  background-color: var(--tertiary-background-color);
+
+  padding-block: 7rem;
+}
+
+.main__paragrafo-roupas{
+  text-align: center;
+
+  margin-bottom: 3rem;
+}
+
+.camiseta-desktop{
+  display: none;
+}
+
+.main__img-roupas{
+  vertical-align: top;
+
+  width: min(45rem, 100%);
+}
+
+@media screen and (min-width: 768px) {
+  .main__container{
+    width: min(70rem, 90%);
+  }
+  
+  /* POPULARES */
+  .main__content-populares{
+    flex-direction: row;
+  }
+
+  .main__img-populares{
+    width: 32rem;
+  }
+
+  /* NOVIDADES */
+  .main__content-novidades{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 5rem;
+  }
+
+  /* ROUPAS */
+  .main__content-roupas{
+    display: flex;
+    align-items: center;
+    column-gap: 4.8rem;
+  }
+
+  .camiseta-mobile{
+    display: none;
+  }
+
+  .camiseta-desktop{
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main__container{
+    width: min(95rem, 90%);
+  }
+
+  /* NOVIDADES */
+  .main__content-novidades{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 5.8rem;
+  }
+
+  /* ROUPAS */
+  .main__content-roupas{
+    column-gap: 0;
+  }
+
+  .main__paragrafoDivisao-roupas{
+    background-color: var(--primary-background-color);
+    border-top-left-radius: 5rem;
+    border-bottom-left-radius: 5rem;
+
+    height: 35rem;
+
+    padding-top: 5rem;
+    padding-left: 4rem;
+    padding-right: 2rem;
+  }
+
+  .main__imgDivisao-roupas{
+    background-color: var(--primary-background-color);
+    border-radius: 5rem;
+
+    padding-inline: 4rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* ROUPAS */
+  .main__paragrafoDivisao-roupas{
+    height: 30rem;
+  }
+
+  .main__paragrafo-roupas{
+    font-size: 2rem;
+  }
+  
+  .main__imgDivisao-roupas{
+    padding-inline: 6.4rem;
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  .main__container{
+    width: min(130rem, 90%);
+  }
+
+  /* NOVIDADES */
+  .main__content-novidades{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2fr;
+    grid-template-areas: 
+    'A B C D'
+    '. E F .';
+    column-gap: 6.4rem;
+  }
+
+  .instrumento1{
+    grid-area: A;    
+  }
+
+  .instrumento2{
+    grid-area: B;    
+  }
+
+  .instrumento3{
+    grid-area: C;    
+  }
+
+  .instrumento4{
+    grid-area: D;    
+  }
+
+  .instrumento5{
+    grid-area: E;    
+  }
+
+  .instrumento6{
+    grid-area: F;    
+  }
+
+  /* ROUPAS */
+
+  .main__paragrafoDivisao-roupas{
+    height: 35rem;
+  }
+}
